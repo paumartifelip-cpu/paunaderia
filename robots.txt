@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
+# Full product catalog + raw photo gallery, for crawlers and ad-generation tools
 Sitemap: products.json
+Sitemap: products_feed.json
+Sitemap: gallery.html
