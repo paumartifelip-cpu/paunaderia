@@ -6,9 +6,11 @@
   <title>paunaderia | Panadería Artesanal de Masa Madre & Viennoiserie</title>
   <meta name="description" content="paunaderia: Pan de verdad fermentado lentamente durante más de 30 horas. Harinas ecológicas, masa madre viva y repostería artesana recién horneada.">
 
-  <!-- Machine-readable product feed: full catalog with image paths, prices (EUR) and descriptions,
-       for crawlers, scrapers and AI generation tools (e.g. Higgsfield) to consume directly. -->
+  <!-- Machine-readable product feeds for crawlers, scrapers and AI ad-generation tools
+       (e.g. Higgsfield) to pull the full catalog + photos directly, without parsing the DOM. -->
   <link rel="alternate" type="application/json" href="products.json" title="paunaderia product feed">
+  <link rel="alternate" type="application/json" href="products_feed.json" title="paunaderia ad catalog feed (Meta/Google Shopping schema)">
+  <link rel="alternate" type="text/csv" href="products_feed.csv" title="paunaderia ad catalog feed (CSV)">
 
   <!-- Favicon SVG -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥖</text></svg>">
