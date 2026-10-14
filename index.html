@@ -21,6 +21,136 @@
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="style.css">
+
+  <!-- Static schema.org ItemList of the full product catalog (name, price, image, category).
+       Written directly into the HTML (not injected by JS) so crawlers and AI tools that don't
+       execute JavaScript (e.g. simple ad-catalog scrapers) still see every product + photo. -->
+  <script type="application/ld+json" id="productCatalogJsonLd">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Catálogo paunaderia",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Product",
+          "sku": "hogaza-campagne",
+          "name": "Hogaza Campagne Rústica",
+          "category": "Masa Madre & Hogazas",
+          "description": "Nuestra hogaza insignia. Corteza gruesa, caramelizada y crujiente con miga alveolada, húmeda y de acidez balanceada.",
+          "image": "https://raw.githubusercontent.com/paumartifelip-cpu/paunaderia/main/assets/images/hogaza-campagne.jpg",
+          "offers": { "@type": "Offer", "price": "4.80", "priceCurrency": "EUR", "availability": "https://schema.org/InStock" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "Product",
+          "sku": "croissant-mantequilla",
+          "name": "Croissant Hojaldrado de Mantequilla",
+          "category": "Bollería & Viennoiserie",
+          "description": "Hojaldre de capas infinitas, crujiente por fuera y con corazón suave y alveolado que funde en boca.",
+          "image": "https://raw.githubusercontent.com/paumartifelip-cpu/paunaderia/main/assets/images/croissant-mantequilla.jpg",
+          "offers": { "@type": "Offer", "price": "2.20", "priceCurrency": "EUR", "availability": "https://schema.org/InStock" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "Product",
+          "sku": "baguette-tradition",
+          "name": "Baguette Tradition Francesa",
+          "category": "Baguettes & Especiales",
+          "description": "Elaborada según la tradición parisina. Corteza fina y quebradiza, puntas crujientes y miga aireada color crema.",
+          "image": "https://raw.githubusercontent.com/paumartifelip-cpu/paunaderia/main/assets/images/baguette-tradition.jpg",
+          "offers": { "@type": "Offer", "price": "1.80", "priceCurrency": "EUR", "availability": "https://schema.org/InStock" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "Product",
+          "sku": "galletas-chocolate",
+          "name": "Galletas de Chocolate Artesanas",
+          "category": "Bollería & Viennoiserie",
+          "description": "Bordes crujientes y centro tierno y fundente, cargadas de generosas pepitas de chocolate negro.",
+          "image": "https://raw.githubusercontent.com/paumartifelip-cpu/paunaderia/main/assets/images/galletas-chocolate.jpg",
+          "offers": { "@type": "Offer", "price": "3.50", "priceCurrency": "EUR", "availability": "https://schema.org/InStock" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "Product",
+          "sku": "focaccia-romero",
+          "name": "Focaccia Genovesa de Romero & Sal Maldon",
+          "category": "Baguettes & Especiales",
+          "description": "Esponjosa y jugosa por dentro con fondo dorado crocante impregnado en el mejor AOVE.",
+          "image": "https://raw.githubusercontent.com/paumartifelip-cpu/paunaderia/main/assets/images/focaccia-romero.jpg",
+          "offers": { "@type": "Offer", "price": "3.90", "priceCurrency": "EUR", "availability": "https://schema.org/InStock" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "item": {
+          "@type": "Product",
+          "sku": "rollo-canela",
+          "name": "Rollo de Canela Glaseado",
+          "category": "Bollería & Viennoiserie",
+          "description": "Espiral tierna y especiada coronada con un generoso glaseado de queso crema recién hecho.",
+          "image": "https://raw.githubusercontent.com/paumartifelip-cpu/paunaderia/main/assets/images/rollo-canela.jpg",
+          "offers": { "@type": "Offer", "price": "3.20", "priceCurrency": "EUR", "availability": "https://schema.org/InStock" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "item": {
+          "@type": "Product",
+          "sku": "tarta-zanahoria",
+          "name": "Tarta de Zanahoria con Queso Crema",
+          "category": "Packs & Desayunos",
+          "description": "Tres capas jugosas de bizcocho especiado con nueces, cubiertas de un suave frosting de queso crema.",
+          "image": "https://raw.githubusercontent.com/paumartifelip-cpu/paunaderia/main/assets/images/tarta-zanahoria.jpg",
+          "offers": { "@type": "Offer", "price": "4.50", "priceCurrency": "EUR", "availability": "https://schema.org/InStock" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 8,
+        "item": {
+          "@type": "Product",
+          "sku": "mermelada-fresa",
+          "name": "Mermelada de Fresa Casera",
+          "category": "Packs & Desayunos",
+          "description": "Elaborada en pequeños lotes con fruta madura, perfecta para untar en nuestras hogazas y tostadas.",
+          "image": "https://raw.githubusercontent.com/paumartifelip-cpu/paunaderia/main/assets/images/mermelada-fresa.jpg",
+          "offers": { "@type": "Offer", "price": "4.20", "priceCurrency": "EUR", "availability": "https://schema.org/InStock" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 9,
+        "item": {
+          "@type": "Product",
+          "sku": "pack-desayuno-obrador",
+          "name": "Pack Desayuno Obrador",
+          "category": "Packs & Desayunos",
+          "description": "1 Croissant de mantequilla + 1 Pan de semillas + 1 Tarro de mermelada de fresa casera, listo para regalar o disfrutar.",
+          "image": "https://raw.githubusercontent.com/paumartifelip-cpu/paunaderia/main/assets/images/pack-obrador.jpg",
+          "offers": { "@type": "Offer", "price": "9.90", "priceCurrency": "EUR", "availability": "https://schema.org/InStock" }
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
