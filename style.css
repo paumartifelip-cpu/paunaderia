@@ -38,10 +38,10 @@
   --shadow-xl: 0 16px 36px rgba(28, 43, 94, 0.14);
 
   /* Radius */
-  --radius-sm: 4px;
-  --radius-md: 6px;
-  --radius-lg: 8px;
-  --radius-full: 6px;
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-full: 0px;
 
   /* Transitions */
   --transition-fast: 0.18s ease;
@@ -292,7 +292,7 @@ button {
   min-width: 20px;
   height: 20px;
   padding: 0 5px;
-  border-radius: 10px;
+  border-radius: 0px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -848,7 +848,7 @@ button {
   color: var(--text-primary);
   width: 36px;
   height: 36px;
-  border-radius: 50%;
+  border-radius: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1423,7 +1423,7 @@ button {
   color: var(--text-secondary);
   width: 36px;
   height: 36px;
-  border-radius: 50%;
+  border-radius: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1938,7 +1938,7 @@ button {
   color: #fff;
   width: 20px;
   height: 20px;
-  border-radius: 50%;
+  border-radius: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
