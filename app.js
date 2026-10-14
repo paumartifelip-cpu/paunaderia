@@ -225,6 +225,59 @@ function init() {
   renderCatalog();
   updateCartUI();
   setupEventListeners();
+  injectStructuredData();
+}
+
+// ==========================================================================
+// Structured Data for Crawlers / AI Image Tools (Higgsfield, bots, etc.)
+// Emits a schema.org ItemList of Products with absolute image URLs so the
+// full catalog + photos can be read from a single <script type="application/ld+json">
+// block without needing to parse the rendered DOM.
+// ==========================================================================
+function injectStructuredData() {
+  const origin = window.location.href.replace(/index\.html.*$/, '').replace(/\/?$/, '/');
+
+  const itemListElement = PRODUCTS.map((product, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    item: {
+      '@type': 'Product',
+      sku: product.id,
+      name: product.name,
+      category: product.categoryName,
+      description: product.description,
+      image: origin + product.image,
+      weight: product.weight,
+      additionalProperty: [
+        { '@type': 'PropertyValue', name: 'fermentacion', value: product.fermentation },
+        { '@type': 'PropertyValue', name: 'harinas', value: product.flours },
+        { '@type': 'PropertyValue', name: 'alergenos', value: product.allergens }
+      ],
+      offers: {
+        '@type': 'Offer',
+        price: product.price.toFixed(2),
+        priceCurrency: 'EUR',
+        availability: 'https://schema.org/InStock',
+        url: origin + '#catalogo'
+      }
+    }
+  }));
+
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Catálogo paunaderia',
+    itemListElement
+  };
+
+  let script = document.getElementById('productCatalogJsonLd');
+  if (!script) {
+    script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.id = 'productCatalogJsonLd';
+    document.head.appendChild(script);
+  }
+  script.textContent = JSON.stringify(jsonLd, null, 2);
 }
 
 // ==========================================================================
@@ -267,15 +320,20 @@ function renderCatalog() {
 
   productsGrid.innerHTML = filtered.map(product => {
     return `
-      <article class="product-card" data-id="${product.id}">
+      <article class="product-card" data-id="${product.id}" data-sku="${product.id}" data-category="${product.category}" data-price="${product.price.toFixed(2)}" data-currency="EUR" data-image="${product.image}" itemscope itemtype="https://schema.org/Product">
+        <meta itemprop="sku" content="${product.id}">
+        <meta itemprop="category" content="${product.categoryName}">
         <div class="product-thumb-wrap" onclick="openProductModal('${product.id}')" title="Ver detalles de ${product.name}">
           ${product.badge ? `<div class="product-badges"><span class="badge ${product.badgeType}">${product.badge}</span></div>` : ''}
-          
-          <img 
-            src="${product.image}" 
-            alt="${product.name}" 
+
+          <img
+            src="${product.image}"
+            alt="${product.name} - ${product.categoryName} de paunaderia, ${product.weight}"
             class="product-thumb"
             loading="lazy"
+            itemprop="image"
+            data-product-id="${product.id}"
+            data-product-name="${product.name}"
             onerror="handleImageError(this, '${product.icon}', '${product.name}')"
           >
 
@@ -286,15 +344,18 @@ function renderCatalog() {
 
         <div class="product-details">
           <div class="product-category-name">${product.categoryName}</div>
-          <h3 class="product-title" onclick="openProductModal('${product.id}')" style="cursor: pointer;">${product.name}</h3>
-          <p class="product-description">${product.description}</p>
-          
+          <h3 class="product-title" itemprop="name" onclick="openProductModal('${product.id}')" style="cursor: pointer;">${product.name}</h3>
+          <p class="product-description" itemprop="description">${product.description}</p>
+
           <div class="product-meta-tags">
             <span class="meta-pill">⏱️ ${product.fermentation}</span>
             <span class="meta-pill">⚖️ ${product.weight}</span>
           </div>
 
-          <div class="product-footer-row">
+          <div class="product-footer-row" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+            <meta itemprop="priceCurrency" content="EUR">
+            <meta itemprop="price" content="${product.price.toFixed(2)}">
+            <meta itemprop="availability" content="https://schema.org/InStock">
             <div class="product-price-wrap">
               <span class="product-price">${formatCurrency(product.price)}</span>
               <span class="product-weight">${product.weight}</span>
