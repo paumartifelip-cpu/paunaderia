@@ -328,9 +328,9 @@ function renderCatalog() {
 
           <img
             src="${product.image}"
-            alt="${product.name} - ${product.categoryName} de paunaderia, ${product.weight}"
+            alt="${product.name} - ${product.categoryName} de paunaderia, ${product.weight}, ${product.price.toFixed(2)} EUR"
             class="product-thumb"
-            loading="lazy"
+            width="800" height="800"
             itemprop="image"
             data-product-id="${product.id}"
             data-product-name="${product.name}"

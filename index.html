@@ -258,8 +258,447 @@
 
       <!-- Products Grid -->
       <div class="products-grid" id="productsGrid">
-        <!-- Rendered dynamically by app.js -->
-      </div>
+      <article class="product-card" data-id="hogaza-campagne" data-sku="hogaza-campagne" data-category="masa-madre" data-price="4.80" data-currency="EUR" data-image="assets/images/hogaza-campagne.jpg" itemscope itemtype="https://schema.org/Product">
+        <meta itemprop="sku" content="hogaza-campagne">
+        <meta itemprop="category" content="Masa Madre & Hogazas">
+        <div class="product-thumb-wrap" onclick="openProductModal('hogaza-campagne')" title="Ver detalles de Hogaza Campagne Rústica">
+          <div class="product-badges"><span class="badge badge-highlight">Estrella del Obrador</span></div>
+          
+          <img 
+            src="assets/images/hogaza-campagne.jpg" 
+            alt="Hogaza Campagne Rústica - Masa Madre & Hogazas de paunaderia, 850 g aprox., 4.80 EUR" 
+            class="product-thumb"
+            width="800" height="800"
+            itemprop="image"
+            data-product-id="hogaza-campagne"
+            data-product-name="Hogaza Campagne Rústica"
+            onerror="handleImageError(this, '🍞', 'Hogaza Campagne Rústica')"
+          >
+
+          <button class="quick-view-btn" onclick="event.stopPropagation(); openProductModal('hogaza-campagne')" aria-label="Ver detalles">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+          </button>
+        </div>
+
+        <div class="product-details">
+          <div class="product-category-name">Masa Madre & Hogazas</div>
+          <h3 class="product-title" itemprop="name" onclick="openProductModal('hogaza-campagne')" style="cursor: pointer;">Hogaza Campagne Rústica</h3>
+          <p class="product-description" itemprop="description">Nuestra hogaza insignia. Corteza gruesa, caramelizada y crujiente con miga alveolada, húmeda y de acidez balanceada.</p>
+          
+          <div class="product-meta-tags">
+            <span class="meta-pill">⏱️ 36h reposo en frío</span>
+            <span class="meta-pill">⚖️ 850 g aprox.</span>
+          </div>
+
+          <div class="product-footer-row" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+            <meta itemprop="priceCurrency" content="EUR">
+            <meta itemprop="price" content="4.80">
+            <meta itemprop="availability" content="https://schema.org/InStock">
+            <div class="product-price-wrap">
+              <span class="product-price">4,80 €</span>
+              <span class="product-weight">850 g aprox.</span>
+            </div>
+
+            <button class="add-cart-btn" onclick="addToCart('hogaza-campagne')">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+              <span>Añadir</span>
+            </button>
+          </div>
+        </div>
+      </article>
+    
+      <article class="product-card" data-id="croissant-mantequilla" data-sku="croissant-mantequilla" data-category="viennoiserie" data-price="2.20" data-currency="EUR" data-image="assets/images/croissant-mantequilla.jpg" itemscope itemtype="https://schema.org/Product">
+        <meta itemprop="sku" content="croissant-mantequilla">
+        <meta itemprop="category" content="Bollería & Viennoiserie">
+        <div class="product-thumb-wrap" onclick="openProductModal('croissant-mantequilla')" title="Ver detalles de Croissant Hojaldrado de Mantequilla">
+          <div class="product-badges"><span class="badge badge-fermentation">Recién Salido</span></div>
+          
+          <img 
+            src="assets/images/croissant-mantequilla.jpg" 
+            alt="Croissant Hojaldrado de Mantequilla - Bollería & Viennoiserie de paunaderia, 90 g, 2.20 EUR" 
+            class="product-thumb"
+            width="800" height="800"
+            itemprop="image"
+            data-product-id="croissant-mantequilla"
+            data-product-name="Croissant Hojaldrado de Mantequilla"
+            onerror="handleImageError(this, '🥐', 'Croissant Hojaldrado de Mantequilla')"
+          >
+
+          <button class="quick-view-btn" onclick="event.stopPropagation(); openProductModal('croissant-mantequilla')" aria-label="Ver detalles">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+          </button>
+        </div>
+
+        <div class="product-details">
+          <div class="product-category-name">Bollería & Viennoiserie</div>
+          <h3 class="product-title" itemprop="name" onclick="openProductModal('croissant-mantequilla')" style="cursor: pointer;">Croissant Hojaldrado de Mantequilla</h3>
+          <p class="product-description" itemprop="description">Hojaldre de capas infinitas, crujiente por fuera y con corazón suave y alveolado que funde en boca.</p>
+          
+          <div class="product-meta-tags">
+            <span class="meta-pill">⏱️ 24h laminado en frío</span>
+            <span class="meta-pill">⚖️ 90 g</span>
+          </div>
+
+          <div class="product-footer-row" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+            <meta itemprop="priceCurrency" content="EUR">
+            <meta itemprop="price" content="2.20">
+            <meta itemprop="availability" content="https://schema.org/InStock">
+            <div class="product-price-wrap">
+              <span class="product-price">2,20 €</span>
+              <span class="product-weight">90 g</span>
+            </div>
+
+            <button class="add-cart-btn" onclick="addToCart('croissant-mantequilla')">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+              <span>Añadir</span>
+            </button>
+          </div>
+        </div>
+      </article>
+    
+      <article class="product-card" data-id="baguette-tradition" data-sku="baguette-tradition" data-category="especiales" data-price="1.80" data-currency="EUR" data-image="assets/images/baguette-tradition.jpg" itemscope itemtype="https://schema.org/Product">
+        <meta itemprop="sku" content="baguette-tradition">
+        <meta itemprop="category" content="Baguettes & Especiales">
+        <div class="product-thumb-wrap" onclick="openProductModal('baguette-tradition')" title="Ver detalles de Baguette Tradition Francesa">
+          <div class="product-badges"><span class="badge badge-fermentation">Crujiente Diario</span></div>
+          
+          <img 
+            src="assets/images/baguette-tradition.jpg" 
+            alt="Baguette Tradition Francesa - Baguettes & Especiales de paunaderia, 280 g, 1.80 EUR" 
+            class="product-thumb"
+            width="800" height="800"
+            itemprop="image"
+            data-product-id="baguette-tradition"
+            data-product-name="Baguette Tradition Francesa"
+            onerror="handleImageError(this, '🥖', 'Baguette Tradition Francesa')"
+          >
+
+          <button class="quick-view-btn" onclick="event.stopPropagation(); openProductModal('baguette-tradition')" aria-label="Ver detalles">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+          </button>
+        </div>
+
+        <div class="product-details">
+          <div class="product-category-name">Baguettes & Especiales</div>
+          <h3 class="product-title" itemprop="name" onclick="openProductModal('baguette-tradition')" style="cursor: pointer;">Baguette Tradition Francesa</h3>
+          <p class="product-description" itemprop="description">Elaborada según la tradición parisina. Corteza fina y quebradiza, puntas crujientes y miga aireada color crema.</p>
+          
+          <div class="product-meta-tags">
+            <span class="meta-pill">⏱️ 24h autólisis y fermentación</span>
+            <span class="meta-pill">⚖️ 280 g</span>
+          </div>
+
+          <div class="product-footer-row" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+            <meta itemprop="priceCurrency" content="EUR">
+            <meta itemprop="price" content="1.80">
+            <meta itemprop="availability" content="https://schema.org/InStock">
+            <div class="product-price-wrap">
+              <span class="product-price">1,80 €</span>
+              <span class="product-weight">280 g</span>
+            </div>
+
+            <button class="add-cart-btn" onclick="addToCart('baguette-tradition')">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+              <span>Añadir</span>
+            </button>
+          </div>
+        </div>
+      </article>
+    
+      <article class="product-card" data-id="galletas-chocolate" data-sku="galletas-chocolate" data-category="viennoiserie" data-price="3.50" data-currency="EUR" data-image="assets/images/galletas-chocolate.jpg" itemscope itemtype="https://schema.org/Product">
+        <meta itemprop="sku" content="galletas-chocolate">
+        <meta itemprop="category" content="Bollería & Viennoiserie">
+        <div class="product-thumb-wrap" onclick="openProductModal('galletas-chocolate')" title="Ver detalles de Galletas de Chocolate Artesanas">
+          <div class="product-badges"><span class="badge badge-highlight">Favorito Dulce</span></div>
+          
+          <img 
+            src="assets/images/galletas-chocolate.jpg" 
+            alt="Galletas de Chocolate Artesanas - Bollería & Viennoiserie de paunaderia, Paquete de 6 uds., 3.50 EUR" 
+            class="product-thumb"
+            width="800" height="800"
+            itemprop="image"
+            data-product-id="galletas-chocolate"
+            data-product-name="Galletas de Chocolate Artesanas"
+            onerror="handleImageError(this, '🍪', 'Galletas de Chocolate Artesanas')"
+          >
+
+          <button class="quick-view-btn" onclick="event.stopPropagation(); openProductModal('galletas-chocolate')" aria-label="Ver detalles">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+          </button>
+        </div>
+
+        <div class="product-details">
+          <div class="product-category-name">Bollería & Viennoiserie</div>
+          <h3 class="product-title" itemprop="name" onclick="openProductModal('galletas-chocolate')" style="cursor: pointer;">Galletas de Chocolate Artesanas</h3>
+          <p class="product-description" itemprop="description">Bordes crujientes y centro tierno y fundente, cargadas de generosas pepitas de chocolate negro.</p>
+          
+          <div class="product-meta-tags">
+            <span class="meta-pill">⏱️ Reposo de masa 12h en frío</span>
+            <span class="meta-pill">⚖️ Paquete de 6 uds.</span>
+          </div>
+
+          <div class="product-footer-row" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+            <meta itemprop="priceCurrency" content="EUR">
+            <meta itemprop="price" content="3.50">
+            <meta itemprop="availability" content="https://schema.org/InStock">
+            <div class="product-price-wrap">
+              <span class="product-price">3,50 €</span>
+              <span class="product-weight">Paquete de 6 uds.</span>
+            </div>
+
+            <button class="add-cart-btn" onclick="addToCart('galletas-chocolate')">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+              <span>Añadir</span>
+            </button>
+          </div>
+        </div>
+      </article>
+    
+      <article class="product-card" data-id="focaccia-romero" data-sku="focaccia-romero" data-category="especiales" data-price="3.90" data-currency="EUR" data-image="assets/images/focaccia-romero.jpg" itemscope itemtype="https://schema.org/Product">
+        <meta itemprop="sku" content="focaccia-romero">
+        <meta itemprop="category" content="Baguettes & Especiales">
+        <div class="product-thumb-wrap" onclick="openProductModal('focaccia-romero')" title="Ver detalles de Focaccia Genovesa de Romero & Sal Maldon">
+          <div class="product-badges"><span class="badge badge-vegan">Vegano</span></div>
+          
+          <img 
+            src="assets/images/focaccia-romero.jpg" 
+            alt="Focaccia Genovesa de Romero & Sal Maldon - Baguettes & Especiales de paunaderia, 400 g, 3.90 EUR" 
+            class="product-thumb"
+            width="800" height="800"
+            itemprop="image"
+            data-product-id="focaccia-romero"
+            data-product-name="Focaccia Genovesa de Romero & Sal Maldon"
+            onerror="handleImageError(this, '🌿', 'Focaccia Genovesa de Romero & Sal Maldon')"
+          >
+
+          <button class="quick-view-btn" onclick="event.stopPropagation(); openProductModal('focaccia-romero')" aria-label="Ver detalles">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+          </button>
+        </div>
+
+        <div class="product-details">
+          <div class="product-category-name">Baguettes & Especiales</div>
+          <h3 class="product-title" itemprop="name" onclick="openProductModal('focaccia-romero')" style="cursor: pointer;">Focaccia Genovesa de Romero & Sal Maldon</h3>
+          <p class="product-description" itemprop="description">Esponjosa y jugosa por dentro con fondo dorado crocante impregnado en el mejor AOVE.</p>
+          
+          <div class="product-meta-tags">
+            <span class="meta-pill">⏱️ 18h alta hidratación (85%)</span>
+            <span class="meta-pill">⚖️ 400 g</span>
+          </div>
+
+          <div class="product-footer-row" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+            <meta itemprop="priceCurrency" content="EUR">
+            <meta itemprop="price" content="3.90">
+            <meta itemprop="availability" content="https://schema.org/InStock">
+            <div class="product-price-wrap">
+              <span class="product-price">3,90 €</span>
+              <span class="product-weight">400 g</span>
+            </div>
+
+            <button class="add-cart-btn" onclick="addToCart('focaccia-romero')">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+              <span>Añadir</span>
+            </button>
+          </div>
+        </div>
+      </article>
+    
+      <article class="product-card" data-id="rollo-canela" data-sku="rollo-canela" data-category="viennoiserie" data-price="3.20" data-currency="EUR" data-image="assets/images/rollo-canela.jpg" itemscope itemtype="https://schema.org/Product">
+        <meta itemprop="sku" content="rollo-canela">
+        <meta itemprop="category" content="Bollería & Viennoiserie">
+        <div class="product-thumb-wrap" onclick="openProductModal('rollo-canela')" title="Ver detalles de Rollo de Canela Glaseado">
+          <div class="product-badges"><span class="badge badge-fermentation">Tierno 4 días</span></div>
+          
+          <img 
+            src="assets/images/rollo-canela.jpg" 
+            alt="Rollo de Canela Glaseado - Bollería & Viennoiserie de paunaderia, 140 g, 3.20 EUR" 
+            class="product-thumb"
+            width="800" height="800"
+            itemprop="image"
+            data-product-id="rollo-canela"
+            data-product-name="Rollo de Canela Glaseado"
+            onerror="handleImageError(this, '🌀', 'Rollo de Canela Glaseado')"
+          >
+
+          <button class="quick-view-btn" onclick="event.stopPropagation(); openProductModal('rollo-canela')" aria-label="Ver detalles">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+          </button>
+        </div>
+
+        <div class="product-details">
+          <div class="product-category-name">Bollería & Viennoiserie</div>
+          <h3 class="product-title" itemprop="name" onclick="openProductModal('rollo-canela')" style="cursor: pointer;">Rollo de Canela Glaseado</h3>
+          <p class="product-description" itemprop="description">Espiral tierna y especiada coronada con un generoso glaseado de queso crema recién hecho.</p>
+          
+          <div class="product-meta-tags">
+            <span class="meta-pill">⏱️ Fermentación lenta de 18h</span>
+            <span class="meta-pill">⚖️ 140 g</span>
+          </div>
+
+          <div class="product-footer-row" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+            <meta itemprop="priceCurrency" content="EUR">
+            <meta itemprop="price" content="3.20">
+            <meta itemprop="availability" content="https://schema.org/InStock">
+            <div class="product-price-wrap">
+              <span class="product-price">3,20 €</span>
+              <span class="product-weight">140 g</span>
+            </div>
+
+            <button class="add-cart-btn" onclick="addToCart('rollo-canela')">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+              <span>Añadir</span>
+            </button>
+          </div>
+        </div>
+      </article>
+    
+      <article class="product-card" data-id="tarta-zanahoria" data-sku="tarta-zanahoria" data-category="packs" data-price="4.50" data-currency="EUR" data-image="assets/images/tarta-zanahoria.jpg" itemscope itemtype="https://schema.org/Product">
+        <meta itemprop="sku" content="tarta-zanahoria">
+        <meta itemprop="category" content="Packs & Desayunos">
+        <div class="product-thumb-wrap" onclick="openProductModal('tarta-zanahoria')" title="Ver detalles de Tarta de Zanahoria con Queso Crema">
+          <div class="product-badges"><span class="badge badge-highlight">Recién Horneada</span></div>
+          
+          <img 
+            src="assets/images/tarta-zanahoria.jpg" 
+            alt="Tarta de Zanahoria con Queso Crema - Packs & Desayunos de paunaderia, Porción 180 g, 4.50 EUR" 
+            class="product-thumb"
+            width="800" height="800"
+            itemprop="image"
+            data-product-id="tarta-zanahoria"
+            data-product-name="Tarta de Zanahoria con Queso Crema"
+            onerror="handleImageError(this, '🥕', 'Tarta de Zanahoria con Queso Crema')"
+          >
+
+          <button class="quick-view-btn" onclick="event.stopPropagation(); openProductModal('tarta-zanahoria')" aria-label="Ver detalles">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+          </button>
+        </div>
+
+        <div class="product-details">
+          <div class="product-category-name">Packs & Desayunos</div>
+          <h3 class="product-title" itemprop="name" onclick="openProductModal('tarta-zanahoria')" style="cursor: pointer;">Tarta de Zanahoria con Queso Crema</h3>
+          <p class="product-description" itemprop="description">Tres capas jugosas de bizcocho especiado con nueces, cubiertas de un suave frosting de queso crema.</p>
+          
+          <div class="product-meta-tags">
+            <span class="meta-pill">⏱️ Horneado artesano diario</span>
+            <span class="meta-pill">⚖️ Porción 180 g</span>
+          </div>
+
+          <div class="product-footer-row" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+            <meta itemprop="priceCurrency" content="EUR">
+            <meta itemprop="price" content="4.50">
+            <meta itemprop="availability" content="https://schema.org/InStock">
+            <div class="product-price-wrap">
+              <span class="product-price">4,50 €</span>
+              <span class="product-weight">Porción 180 g</span>
+            </div>
+
+            <button class="add-cart-btn" onclick="addToCart('tarta-zanahoria')">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+              <span>Añadir</span>
+            </button>
+          </div>
+        </div>
+      </article>
+    
+      <article class="product-card" data-id="mermelada-fresa" data-sku="mermelada-fresa" data-category="packs" data-price="4.20" data-currency="EUR" data-image="assets/images/mermelada-fresa.jpg" itemscope itemtype="https://schema.org/Product">
+        <meta itemprop="sku" content="mermelada-fresa">
+        <meta itemprop="category" content="Packs & Desayunos">
+        <div class="product-thumb-wrap" onclick="openProductModal('mermelada-fresa')" title="Ver detalles de Mermelada de Fresa Casera">
+          <div class="product-badges"><span class="badge badge-vegan">Hecho a Mano</span></div>
+          
+          <img 
+            src="assets/images/mermelada-fresa.jpg" 
+            alt="Mermelada de Fresa Casera - Packs & Desayunos de paunaderia, Tarro 250 g, 4.20 EUR" 
+            class="product-thumb"
+            width="800" height="800"
+            itemprop="image"
+            data-product-id="mermelada-fresa"
+            data-product-name="Mermelada de Fresa Casera"
+            onerror="handleImageError(this, '🍓', 'Mermelada de Fresa Casera')"
+          >
+
+          <button class="quick-view-btn" onclick="event.stopPropagation(); openProductModal('mermelada-fresa')" aria-label="Ver detalles">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+          </button>
+        </div>
+
+        <div class="product-details">
+          <div class="product-category-name">Packs & Desayunos</div>
+          <h3 class="product-title" itemprop="name" onclick="openProductModal('mermelada-fresa')" style="cursor: pointer;">Mermelada de Fresa Casera</h3>
+          <p class="product-description" itemprop="description">Elaborada en pequeños lotes con fruta madura, perfecta para untar en nuestras hogazas y tostadas.</p>
+          
+          <div class="product-meta-tags">
+            <span class="meta-pill">⏱️ Cocción lenta artesanal</span>
+            <span class="meta-pill">⚖️ Tarro 250 g</span>
+          </div>
+
+          <div class="product-footer-row" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+            <meta itemprop="priceCurrency" content="EUR">
+            <meta itemprop="price" content="4.20">
+            <meta itemprop="availability" content="https://schema.org/InStock">
+            <div class="product-price-wrap">
+              <span class="product-price">4,20 €</span>
+              <span class="product-weight">Tarro 250 g</span>
+            </div>
+
+            <button class="add-cart-btn" onclick="addToCart('mermelada-fresa')">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+              <span>Añadir</span>
+            </button>
+          </div>
+        </div>
+      </article>
+    
+      <article class="product-card" data-id="pack-desayuno-obrador" data-sku="pack-desayuno-obrador" data-category="packs" data-price="9.90" data-currency="EUR" data-image="assets/images/pack-obrador.jpg" itemscope itemtype="https://schema.org/Product">
+        <meta itemprop="sku" content="pack-desayuno-obrador">
+        <meta itemprop="category" content="Packs & Desayunos">
+        <div class="product-thumb-wrap" onclick="openProductModal('pack-desayuno-obrador')" title="Ver detalles de Pack Desayuno Obrador">
+          <div class="product-badges"><span class="badge badge-highlight">Ahorro 15%</span></div>
+          
+          <img 
+            src="assets/images/pack-obrador.jpg" 
+            alt="Pack Desayuno Obrador - Packs & Desayunos de paunaderia, Caja Completa, 9.90 EUR" 
+            class="product-thumb"
+            width="800" height="800"
+            itemprop="image"
+            data-product-id="pack-desayuno-obrador"
+            data-product-name="Pack Desayuno Obrador"
+            onerror="handleImageError(this, '🎁', 'Pack Desayuno Obrador')"
+          >
+
+          <button class="quick-view-btn" onclick="event.stopPropagation(); openProductModal('pack-desayuno-obrador')" aria-label="Ver detalles">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+          </button>
+        </div>
+
+        <div class="product-details">
+          <div class="product-category-name">Packs & Desayunos</div>
+          <h3 class="product-title" itemprop="name" onclick="openProductModal('pack-desayuno-obrador')" style="cursor: pointer;">Pack Desayuno Obrador</h3>
+          <p class="product-description" itemprop="description">1 Croissant de mantequilla + 1 Pan de semillas + 1 Tarro de mermelada de fresa casera, listo para regalar o disfrutar.</p>
+          
+          <div class="product-meta-tags">
+            <span class="meta-pill">⏱️ Combinación artesana</span>
+            <span class="meta-pill">⚖️ Caja Completa</span>
+          </div>
+
+          <div class="product-footer-row" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+            <meta itemprop="priceCurrency" content="EUR">
+            <meta itemprop="price" content="9.90">
+            <meta itemprop="availability" content="https://schema.org/InStock">
+            <div class="product-price-wrap">
+              <span class="product-price">9,90 €</span>
+              <span class="product-weight">Caja Completa</span>
+            </div>
+
+            <button class="add-cart-btn" onclick="addToCart('pack-desayuno-obrador')">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+              <span>Añadir</span>
+            </button>
+          </div>
+        </div>
+      </article>
+    </div>
 
       <!-- Empty State (hidden by default) -->
       <div class="empty-state" id="emptyState" style="display: none;">
